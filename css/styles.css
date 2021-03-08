@@ -1,33 +1,70 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/******************TAG SELECTORS*********/
 body {
   background-color: hsl(185, 75%, 39%);
+  background-image: url("../images/bg-pattern-top.svg"),
+        url("../images/bg-pattern-bottom.svg");
+  background-position: left 45vw top 55vh, right 55vw bottom 30vh;
+  background-repeat: no-repeat;
   font-family: 'Kumbh Sans', sans-serif;
-  font-size: 18px;
-  text-align: center;
+  font-size: 1.6rem;
+  height: 100%;
+  overflow: hidden;
+  width: 100vw;
 }
 
-hr {
+/*hr {
   border-style: solid none none none;
   color: #EAF6F6;
   width: 60%;
-}
+}*/
 
 p {
+  font-weight: bold;
   width: 10%;
 }
 
 
+/********CLASS SELECTORS ********/
 
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  width: 100%;
+}
 .card {
-  margin: 400px auto 0;
-  width: 80%;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1.5rem;
+  height: 37rem;
+  width: 33rem;
+  margin: auto auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
 }
 
 .top-banner {
-  width: 80%;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .age {
-  font-weight: 400;
+  font-weight: 100;
 }
 
 .city {
@@ -36,7 +73,12 @@ p {
 
 .info {
   background-color: white;
+  text-align: center;
   width: 80%;
+}
+
+.info .name, .info .city {
+  width: 100%;
 }
 
 .stats {
@@ -48,6 +90,7 @@ p {
 
 .stats-label {
   font-size: 11px;
+  font-weight: 100;
 }
 
 .attribution {
