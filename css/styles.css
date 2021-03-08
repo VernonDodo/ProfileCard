@@ -13,7 +13,7 @@ body {
   font-family: 'Kumbh Sans', sans-serif;
   font-size: 1.6rem;
   height: 100%;
-  overflow: hidden;
+  overflow: scroll;
   width: 100vw;
 }
 
@@ -44,23 +44,41 @@ p {
   border-radius: 1.5rem;
   height: 37rem;
   width: 33rem;
-  margin: auto auto;
+  margin: 150px auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 70%;
+
 }
 
+.profile-header {
+  background-image: url("../images/bg-pattern-card.svg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  height: 35%;
+  width: 100%;
+  text-align: center;
+}
 .profile-pic {
   border-radius: 50%;
-  position: absolute;
-  left: 50%;
+  border: 0.4rem solid white;
+  height: 9.5rem;
+  width: 9.5rem;
+  position: relative;
+  top: 8rem;
+  border-style: solid 1px;
 }
 
-.top-banner {
+/*.top-banner {
   box-sizing: border-box;
   width: 100%;
+}*/
+.info-panel {
+  justify-content: center;
+  align-items: center;
 }
 
 .age {
@@ -71,7 +89,7 @@ p {
   font-weight: 400;
 }
 
-.info {
+.info-container {
   background-color: white;
   text-align: center;
   width: 80%;
